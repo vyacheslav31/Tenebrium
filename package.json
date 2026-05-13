@@ -1,16 +1,33 @@
 {
   "name": "githubdarkplus",
-  "displayName": "GitHubDark+",
-  "description": "A GitHub dark theme which doesn't use high contrast elements.",
+  "displayName": "Tenebrium",
+  "description": "A refined dark theme with GitHub-inspired surfaces, VS Code 2026 syntax colors, and calm teal workbench accents.",
   "publisher": "VyacheslavGorbov31",
   "author": {
     "name": "Vyacheslav Gorbov"
   },
-  "version": "3.1.0",
-  "license": "GNU General Public License v3.0",
+  "version": "4.0.0",
+  "license": "AGPL-3.0-only",
+  "icon": "assets/tenebrium-icon.png",
+  "galleryBanner": {
+    "color": "#0d1117",
+    "theme": "dark"
+  },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "color theme",
+    "github dark",
+    "vscode 2026",
+    "tenebrium"
+  ],
+  "homepage": "https://github.com/vyacheslav31/Tenebrium#readme",
+  "bugs": {
+    "url": "https://github.com/vyacheslav31/Tenebrium/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vyacheslav31/GitHubDarkPlus"
+    "url": "https://github.com/vyacheslav31/Tenebrium.git"
   },
   "engines": {
     "vscode": "^1.74.0"
@@ -18,12 +35,13 @@
   "categories": [
     "Themes"
   ],
+  "pricing": "Free",
   "contributes": {
     "themes": [
       {
-        "label": "GitHubDark+",
+        "label": "Tenebrium",
         "uiTheme": "vs-dark",
-        "path": "./themes/GitHubDark+-color-theme.json"
+        "path": "./themes/Tenebrium-color-theme.json"
       }
     ]
   }

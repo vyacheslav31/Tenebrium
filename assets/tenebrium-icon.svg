@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Tenebrium icon">
+  <defs>
+    <linearGradient id="shell" x1="80" y1="60" x2="436" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#161b22"/>
+      <stop offset="0.54" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#10161d"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="150" y1="108" x2="344" y2="386" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#79c0ff"/>
+      <stop offset="0.48" stop-color="#3994bc"/>
+      <stop offset="1" stop-color="#56d4dd"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="0" cy="0" r="1" gradientTransform="matrix(220 0 0 220 256 256)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3994bc" stop-opacity="0.42"/>
+      <stop offset="0.62" stop-color="#3994bc" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#3994bc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.22 0 0 0 0 0.58 0 0 0 0 0.74 0 0 0 0.72 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="rounded">
+      <rect x="48" y="48" width="416" height="416" rx="92"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" rx="108" fill="#070a0d"/>
+  <rect x="42" y="42" width="428" height="428" rx="98" fill="url(#shell)" stroke="#26313a" stroke-width="2"/>
+  <g clip-path="url(#rounded)">
+    <circle cx="256" cy="256" r="222" fill="url(#aura)"/>
+    <path d="M118 90h276M98 164h316M82 238h348M98 312h316M118 386h276" stroke="#6e7681" stroke-opacity="0.11" stroke-width="2"/>
+    <path d="M256 68c96 0 174 78 174 174 0 50-21 95-55 127" fill="none" stroke="#3994bc" stroke-opacity="0.28" stroke-width="12" stroke-linecap="round"/>
+    <path d="M136 180c24-52 72-91 130-103" fill="none" stroke="#7ee787" stroke-opacity="0.22" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <path d="M146 124h220c11 0 20 9 20 20v38c0 11-9 20-20 20h-68v164c0 12-10 22-22 22h-40c-12 0-22-10-22-22V202h-68c-11 0-20-9-20-20v-38c0-11 9-20 20-20Z" fill="#061016" opacity="0.8"/>
+  <path filter="url(#softGlow)" d="M150 118h212c10 0 18 8 18 18v36c0 10-8 18-18 18h-72v170c0 10-8 18-18 18h-32c-10 0-18-8-18-18V190h-72c-10 0-18-8-18-18v-36c0-10 8-18 18-18Z" fill="url(#mark)"/>
+  <path d="M150 118h212c10 0 18 8 18 18v10H132v-10c0-10 8-18 18-18Z" fill="#f0f6fc" opacity="0.16"/>
+
+  <circle cx="118" cy="340" r="9" fill="#ff7b72"/>
+  <circle cx="394" cy="316" r="7" fill="#d2a8ff"/>
+  <circle cx="382" cy="150" r="6" fill="#a5d6ff"/>
+  <circle cx="142" cy="170" r="5" fill="#7ee787"/>
+  <rect x="42" y="42" width="428" height="428" rx="98" fill="none" stroke="#3994bc" stroke-opacity="0.42" stroke-width="3"/>
+</svg>
